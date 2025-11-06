@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-altcanc',
-  imports: [],
+  standalone: true,
+  imports: [CommonModule, RouterModule],
   templateUrl: './altcanc.component.html',
-  styleUrl: './altcanc.component.css'
+  styleUrls: ['./altcanc.component.css']
 })
-export class AltcancComponent {
-
-}
+export class AltcancComponent {}
