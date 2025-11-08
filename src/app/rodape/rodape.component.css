@@ -1,0 +1,51 @@
+hr{
+    width: 1200px;
+}
+.caixaPrincipal{
+    width: 1200px;
+    height: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    gap: 30px;
+    justify-content: center ;
+
+}
+.textos{
+
+    height: 500px;
+    width: 300px;
+    margin-top: 20px;
+}
+.caixaSinza{
+    background-color: rgba(128, 128, 128, 0.103);
+    display: flex;
+    width: 1200px;
+    height: 150px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.432);
+
+}
+.logo{
+    height: 50px;
+}
+.playstore{
+    width: 100px;
+}
+.appstore{
+    width: 100px;
+}
+a{
+    color: black;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.social{
+    height: 50px;
+}
