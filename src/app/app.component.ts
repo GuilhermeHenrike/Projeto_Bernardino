@@ -5,11 +5,14 @@ import { CarrosselComponent } from './carrossel/carrossel.component';
 import { RodapeComponent } from './rodape/rodape.component';
 import { HeaderAlternativoComponent } from './header-alternativo/header-alternativo.component';
 import { MossaHistoriaComponent } from './mossa-historia/mossa-historia.component';
+import { BagagemComponent } from "./bagagem/bagagem.component";
+import { AnuncioComponent } from './anuncio/anuncio.component';
+import { OpcoesMainComponent } from './opcoes-main/opcoes-main.component';
 
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, CabecalhoComponent, CarrosselComponent, RodapeComponent, HeaderAlternativoComponent, MossaHistoriaComponent],
+  imports: [RouterOutlet, RodapeComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
