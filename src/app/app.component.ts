@@ -9,6 +9,7 @@ import { BagagemComponent } from "./bagagem/bagagem.component";
 import { AnuncioComponent } from './anuncio/anuncio.component';
 import { OpcoesMainComponent } from './opcoes-main/opcoes-main.component';
 import { PoliticaCooksComponent } from './politica-cooks/politica-cooks.component';
+import { PoliticaDePrivacidadeComponent } from './politica-de-privacidade/politica-de-privacidade.component';
 
 
 @Component({
