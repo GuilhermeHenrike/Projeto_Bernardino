@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { CarrosselComponent } from './carrossel/carrossel.component';
 import { HomeComponent } from './home/home.component';
 import { MossaHistoriaComponent } from './mossa-historia/mossa-historia.component';
+import { PoliticaCooksComponent } from './politica-cooks/politica-cooks.component';
 
 export const routes: Routes = [
     { path: "opcoes-main", component: OpcoesMainComponent}, 
@@ -15,5 +16,6 @@ export const routes: Routes = [
     { path: "informacoes", component: InformacoesComponent},
     { path: '', component: HomeComponent},
     { path: "historia", component: MossaHistoriaComponent},
+    {path: "cooks", component: PoliticaCooksComponent}
 
 ];

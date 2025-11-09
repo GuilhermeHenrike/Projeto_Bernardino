@@ -8,11 +8,12 @@ import { MossaHistoriaComponent } from './mossa-historia/mossa-historia.componen
 import { BagagemComponent } from "./bagagem/bagagem.component";
 import { AnuncioComponent } from './anuncio/anuncio.component';
 import { OpcoesMainComponent } from './opcoes-main/opcoes-main.component';
+import { PoliticaCooksComponent } from './politica-cooks/politica-cooks.component';
 
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, RodapeComponent],
+  imports: [RouterOutlet, RodapeComponent, PoliticaCooksComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

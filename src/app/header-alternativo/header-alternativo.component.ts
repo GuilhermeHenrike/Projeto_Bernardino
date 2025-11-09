@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { RouterLink } from "@angular/router";
 
 @Component({
   selector: 'app-header-alternativo',
-  imports: [],
+  imports: [RouterLink],
   standalone: true,
   templateUrl: './header-alternativo.component.html',
   styleUrl: './header-alternativo.component.css'
