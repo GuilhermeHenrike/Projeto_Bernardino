@@ -9,6 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { MossaHistoriaComponent } from './mossa-historia/mossa-historia.component';
 import { PoliticaCooksComponent } from './politica-cooks/politica-cooks.component';
 import { PoliticaDePrivacidadeComponent } from './politica-de-privacidade/politica-de-privacidade.component';
+import { PerguntasFrequentesComponent } from './perguntas-frequentes/perguntas-frequentes.component';
 
 export const routes: Routes = [
     { path: "opcoes-main", component: OpcoesMainComponent}, 
@@ -19,5 +20,5 @@ export const routes: Routes = [
     { path: "historia", component: MossaHistoriaComponent},
     {path: "cooks", component: PoliticaCooksComponent},
     {path: "pprivacidade", component: PoliticaDePrivacidadeComponent},
-
+    { path: "perguntas-frequentes", component: PerguntasFrequentesComponent}
 ];
