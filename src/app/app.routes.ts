@@ -18,5 +18,5 @@ export const routes: Routes = [
     { path: '', component: HomeComponent},
     { path: "historia", component: MossaHistoriaComponent},
     {path: "cooks", component: PoliticaCooksComponent},
-    {path: "pprivacidade", component: PoliticaDePrivacidadeComponent}
+    {path: "pprivacidade", component: PoliticaDePrivacidadeComponent},
 ];
