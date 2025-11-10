@@ -10,11 +10,13 @@ import { AnuncioComponent } from './anuncio/anuncio.component';
 import { OpcoesMainComponent } from './opcoes-main/opcoes-main.component';
 import { PoliticaCooksComponent } from './politica-cooks/politica-cooks.component';
 import { PoliticaDePrivacidadeComponent } from './politica-de-privacidade/politica-de-privacidade.component';
+import { AjudaComponent } from './ajuda/ajuda.component';
+
 
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, RodapeComponent, PoliticaCooksComponent],
+  imports: [RouterOutlet, RodapeComponent, AjudaComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
