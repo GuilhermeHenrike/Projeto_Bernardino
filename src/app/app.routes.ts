@@ -9,15 +9,23 @@ import { HomeComponent } from './home/home.component';
 import { MossaHistoriaComponent } from './mossa-historia/mossa-historia.component';
 import { PoliticaCooksComponent } from './politica-cooks/politica-cooks.component';
 import { PoliticaDePrivacidadeComponent } from './politica-de-privacidade/politica-de-privacidade.component';
+import { LoginComponent } from './login/login.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 export const routes: Routes = [
     { path: "opcoes-main", component: OpcoesMainComponent}, 
     { path: "altcanc", component: AltcancComponent},
     { path: "bagagem", component: BagagemComponent},
     { path: "informacoes", component: InformacoesComponent},
-    { path: '', component: HomeComponent},
     { path: "historia", component: MossaHistoriaComponent},
     {path: "cooks", component: PoliticaCooksComponent},
     {path: "pprivacidade", component: PoliticaDePrivacidadeComponent},
+
+    {path:'', redirectTo: "login",pathMatch: 'full'},
+    {path:"login", component: LoginComponent},
+    {path: "dashboard", component: DashboardComponent},
+
+    {path: "home", component: HomeComponent},
+
 
 ];
