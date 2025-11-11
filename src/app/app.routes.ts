@@ -11,6 +11,7 @@ import { PoliticaCooksComponent } from './politica-cooks/politica-cooks.componen
 import { PoliticaDePrivacidadeComponent } from './politica-de-privacidade/politica-de-privacidade.component';
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { ResultadoComponent } from './resultado/resultado.component';
 
 export const routes: Routes = [
     { path: "opcoes-main", component: OpcoesMainComponent}, 
@@ -26,6 +27,9 @@ export const routes: Routes = [
     {path: "dashboard", component: DashboardComponent},
 
     {path: "home", component: HomeComponent},
+    { path: 'resultado', component: ResultadoComponent }
+
+
 
 
 ];
