@@ -1,14 +1,12 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { RodapeComponent } from './rodape/rodape.component';
-import { TelaAtendiComponent } from './tela-atendi/tela-atendi.component';
-import { InformacaoComponent } from './informacao/informacao.component';
-import { LoginComponent } from './login/login.component';
+import { PoliticaCooksComponent } from './politica-cooks/politica-cooks.component';
 
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, RodapeComponent,],
+  imports: [RouterOutlet, RodapeComponent, PoliticaCooksComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
