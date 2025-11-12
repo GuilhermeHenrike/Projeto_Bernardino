@@ -10,6 +10,7 @@ import { MossaHistoriaComponent } from './mossa-historia/mossa-historia.componen
 import { PoliticaCooksComponent } from './politica-cooks/politica-cooks.component';
 import { PoliticaDePrivacidadeComponent } from './politica-de-privacidade/politica-de-privacidade.component';
 import { PerguntasFrequentesComponent } from './perguntas-frequentes/perguntas-frequentes.component';
+import { TelaRegistroComponent } from './tela-registro/tela-registro.component';
 
 export const routes: Routes = [
     { path: "opcoes-main", component: OpcoesMainComponent}, 
@@ -18,7 +19,8 @@ export const routes: Routes = [
     { path: "informacoes", component: InformacoesComponent},
     { path: '', component: HomeComponent},
     { path: "historia", component: MossaHistoriaComponent},
-    {path: "cooks", component: PoliticaCooksComponent},
-    {path: "pprivacidade", component: PoliticaDePrivacidadeComponent},
-    { path: "perguntas-frequentes", component: PerguntasFrequentesComponent}
+    { path: "cooks", component: PoliticaCooksComponent},
+    { path: "pprivacidade", component: PoliticaDePrivacidadeComponent},
+    { path: "perguntas-frequentes", component: PerguntasFrequentesComponent},
+    { path: "tela-registro", component: TelaRegistroComponent}
 ];
