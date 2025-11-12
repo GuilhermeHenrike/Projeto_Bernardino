@@ -1,54 +1,68 @@
-
 <div class="cabecalho">
-    <header>
-        <img src="assets/logo.png" alt="" class="logo">
-        <nav>
-            <ul>
-                <li class="bheader"><a routerLink="/historia">Informações</a></li>
-                <li class="bheader"><a href="">Atendimento</a></li>
-                <li class="bheader"><a href="">Minhas viagens </a></li>
-                <li class="bheader"><a href="">Entrar</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <img src="assets/logo.png" alt="" class="logo" />
+    <nav>
+      <ul>
+        <li class="bheader"><a routerLink="/historia">Informações</a></li>
+        <li class="bheader"><a href="">Atendimento</a></li>
+        <li class="bheader"><a href="">Minhas viagens</a></li>
+        <li class="bheader"><a href="">Entrar</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<div class="caixaViagem">
-                        <div class="ida">
-                <form action="" class="formIda">
-                    <label for="tipo">Origem</label> <br>
-                    <select name="tipo" id="tipo">
-                        <option value="" selected disabled>De onde</option>
-                        <option value="João Pessoa">João Pessoa</option>
-                        <option value="Recife">Reife</option>
-                        <option value="Manaus">Manaus</option>
-                    </select>
-                </form>
-            </div>
+  <div class="caixaViagem">
+    <form #formViagem="ngForm" (ngSubmit)="calcular()">
+      <div class="ida">
+        <label>Origem</label> <br />
+        <select [(ngModel)]="origem" name="origem" required>
+          <option value="" disabled selected>De onde</option>
+          <option value="João Pessoa">João Pessoa</option>
+          <option value="Rio de Janeiro">Rio de Janeiro</option>
+          <option value="São Paulo">São Paulo</option>
+          <option value="Manaus">Manaus</option>
+          <option value="Porto Alegre">Porto Alegre</option>
+        </select>
+      </div>
 
-            <div class="destino">
-                <form action="" class="formdestino">
-                    <label for="tipo">Destino</label> <br>
-                    <select name="tipo" id="tipo">
-                        <option value=""selected disabled>Para</option>
-                        <option value="João Pessoa">João Pessoa</option>
-                        <option value="Recife">Recife</option>
-                        <option value="Manaus">Manaus</option>
-                    </select>
-                </form>
-            </div>
+      <div class="destino">
+        <label>Destino</label> <br />
+        <select [(ngModel)]="destino" name="destino" required>
+          <option value="" disabled selected>Para</option>
+          <option value="João Pessoa">João Pessoa</option>
+          <option value="Rio de Janeiro">Rio de Janeiro</option>
+          <option value="São Paulo">São Paulo</option>
+          <option value="Manaus">Manaus</option>
+          <option value="Porto Alegre">Porto Alegre</option>
+        </select>
+      </div>
 
-            <div class="dataida">
-                <form action="" class="dataida">
-                    <label for="tipo">Ida</label> <br>
-                    <input type="date">
-                </form>
-            </div>
+      <div class="dataida">
+        <label>Ida</label> <br />
+        <input type="date" [(ngModel)]="dataIda" name="dataIda" required />
+      </div>
 
-            <div class="datavolta">
-                <form action="" class="datavolta">
-                    <label for="">Volta</label> <br>
-                    <input type="date">
-                </form>
-            </div>
-        </div>
+      <div class="datavolta">
+        <label>Volta</label> <br />
+        <input type="date" [(ngModel)]="dataVolta" name="dataVolta" required />
+      </div>
+
+      <div class="pessoas">
+        <label>Pessoas</label> <br />
+        <input
+          type="number"
+          [(ngModel)]="pessoas"
+          name="pessoas"
+          min="1"
+          required
+        />
+      </div>
+
+      <div class="boatoCaixaViagem">
+        <button type="submit" id="bviagem" [disabled]="!formViagem.valid">
+          Confirmar viagem
+        </button>
+      </div>
+    </form>
+  </div>
 </div>

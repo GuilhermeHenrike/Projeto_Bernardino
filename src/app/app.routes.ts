@@ -11,6 +11,7 @@ import { PoliticaCooksComponent } from './politica-cooks/politica-cooks.componen
 import { PoliticaDePrivacidadeComponent } from './politica-de-privacidade/politica-de-privacidade.component';
 import { PerguntasFrequentesComponent } from './perguntas-frequentes/perguntas-frequentes.component';
 import { TelaRegistroComponent } from './tela-registro/tela-registro.component';
+import { ResultadoComponent } from './resultado/resultado.component';
 
 export const routes: Routes = [
     { path: "opcoes-main", component: OpcoesMainComponent}, 

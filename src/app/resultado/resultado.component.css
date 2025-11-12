@@ -1,0 +1,21 @@
+.resultado{
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.24);
+    margin-left: 120px;
+    height: 380px;
+    border-radius: 15px;
+    width: 350px;
+}
+
+p{
+    margin-left: 30px;
+}
+h2{
+    margin-left: 25px;
+    color: rgb(60, 132, 226);
+}
+strong{
+    color: rgb(46, 100, 172);
+}
+p{
+    color: rgb(13, 41, 75);
+}
