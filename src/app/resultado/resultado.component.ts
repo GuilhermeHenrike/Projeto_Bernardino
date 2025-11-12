@@ -1,33 +1,35 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { HeaderAlternativoComponent } from '../header-alternativo/header-alternativo.component';
 
 @Component({
   selector: 'app-resultado',
-  imports: [],
+  imports: [HeaderAlternativoComponent],
   templateUrl: './resultado.component.html',
   styleUrl: './resultado.component.css'
 })
 export class ResultadoComponent {
   origem = '';
   destino = '';
-  distancia = '';
+  dataIda = '';
+  dataVolta = '';
+  pessoas = 0;
+  distancia = 0;
   preco = '';
   tempo = '';
-  ida = '';
-  volta = '';
-  pessoas = '';
 
-  constructor(private route: ActivatedRoute) {
-    this.route.queryParams.subscribe(params => {
+  constructor(private route: ActivatedRoute) {}
+
+  ngOnInit() {
+    this.route.queryParams.subscribe((params) => {
       this.origem = params['origem'];
       this.destino = params['destino'];
+      this.dataIda = params['dataIda'];
+      this.dataVolta = params['dataVolta'];
+      this.pessoas = params['pessoas'];
       this.distancia = params['distancia'];
       this.preco = params['preco'];
       this.tempo = params['tempo'];
-      this.ida = params['ida'];
-      this.volta = params['volta'];
-      this.pessoas = params['pessoas'];
     });
   }
-
 }

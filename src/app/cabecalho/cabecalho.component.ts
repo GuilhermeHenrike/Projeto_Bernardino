@@ -20,43 +20,41 @@ export class CabecalhoComponent {
   constructor(private router: Router) {}
 
   calcular() {
-    // mapa simples de distâncias
     const distancias: any = {
-      'João Pessoa-Recife': 120,
-      'Recife-João Pessoa': 120,
-      'João Pessoa-Manaus': 2700,
-      'Manaus-João Pessoa': 2700,
-      'Recife-Manaus': 2850,
-      'Manaus-Recife': 2850,
+      'João Pessoa-Rio de Janeiro': 2330,
+      'João Pessoa-São Paulo': 2640,
+      'João Pessoa-Manaus': 2850,
+      'João Pessoa-Porto Alegre': 3200,
+      'Rio de Janeiro-São Paulo': 430,
+      'Rio de Janeiro-Manaus': 2850,
+      'Rio de Janeiro-Porto Alegre': 1550,
+      'São Paulo-Manaus': 2680,
+      'São Paulo-Porto Alegre': 850,
+      'Manaus-Porto Alegre': 3300,
     };
 
-    const chave = `${this.origem}-${this.destino}`;
-    const distancia = distancias[chave] || 0;
+    const chave1 = `${this.origem}-${this.destino}`;
+    const chave2 = `${this.destino}-${this.origem}`;
+    const distancia =
+      distancias[chave1] || distancias[chave2] || 0;
 
-    if (distancia === 0) {
-      alert('Escolha cidades diferentes para calcular.');
-      return;
-    }
-
-    const precoPorKm = 0.75;
-    const velocidadeMedia = 800; // km/h
-
+    const precoPorKm = 0.55;
     const precoTotal = distancia * precoPorKm * this.pessoas;
-    const tempoEstimado = (distancia / velocidadeMedia).toFixed(1);
 
-    // redireciona para página de resultado
+
+    const tempoEstimado = (distancia / 800).toFixed(1);
+
     this.router.navigate(['/resultado'], {
       queryParams: {
         origem: this.origem,
         destino: this.destino,
-        distancia,
+        dataIda: this.dataIda,
+        dataVolta: this.dataVolta,
+        pessoas: this.pessoas,
+        distancia: distancia,
         preco: precoTotal.toFixed(2),
         tempo: tempoEstimado,
-        ida: this.dataIda,
-        volta: this.dataVolta,
-        pessoas: this.pessoas
-      }
+      },
     });
   }
-
 }
