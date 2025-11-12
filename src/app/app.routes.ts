@@ -17,7 +17,6 @@ export const routes: Routes = [
     { path: "altcanc", component: AltcancComponent},
     { path: "bagagem", component: BagagemComponent},
     { path: "informacoes", component: InformacoesComponent},
-    { path: '', component: HomeComponent},
     { path: "historia", component: MossaHistoriaComponent},
     { path: "cooks", component: PoliticaCooksComponent},
     { path: "pprivacidade", component: PoliticaDePrivacidadeComponent},
