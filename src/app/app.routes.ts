@@ -14,11 +14,12 @@ import { TelaRegistroComponent } from './tela-registro/tela-registro.component';
 import { ResultadoComponent } from './resultado/resultado.component';
 
 export const routes: Routes = [
+    { path: '', component: HomeComponent},
     { path: "opcoes-main", component: OpcoesMainComponent}, 
     { path: "altcanc", component: AltcancComponent},
     { path: "bagagem", component: BagagemComponent},
     { path: "informacoes", component: InformacoesComponent},
-    { path: '', component: HomeComponent},
+    { path: "resultado", component: ResultadoComponent},
     { path: "historia", component: MossaHistoriaComponent},
     { path: "cooks", component: PoliticaCooksComponent},
     { path: "pprivacidade", component: PoliticaDePrivacidadeComponent},

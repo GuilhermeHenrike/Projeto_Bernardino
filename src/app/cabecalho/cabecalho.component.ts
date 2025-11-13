@@ -8,7 +8,7 @@ import { FormsModule } from '@angular/forms';
   standalone: true,
   imports: [RouterLink,FormsModule],
   templateUrl: './cabecalho.component.html',
-  styleUrl: './cabecalho.component.css'
+  styleUrls: ['./cabecalho.component.css']
 })
 export class CabecalhoComponent {
   origem = '';

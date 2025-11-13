@@ -3,9 +3,10 @@ import { HeaderAlternativoComponent } from '../header-alternativo/header-alterna
 
 @Component({
   selector: 'app-politica-de-privacidade',
+  standalone: true,
   imports: [HeaderAlternativoComponent],
   templateUrl: './politica-de-privacidade.component.html',
-  styleUrl: './politica-de-privacidade.component.css'
+  styleUrls: ['./politica-de-privacidade.component.css']
 })
 export class PoliticaDePrivacidadeComponent {
 

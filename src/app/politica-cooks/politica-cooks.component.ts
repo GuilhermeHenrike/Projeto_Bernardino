@@ -4,9 +4,10 @@ import { HeaderAlternativoComponent } from "../header-alternativo/header-alterna
 
 @Component({
   selector: 'app-politica-cooks',
+  standalone: true,
   imports: [HeaderAlternativoComponent],
   templateUrl: './politica-cooks.component.html',
-  styleUrl: './politica-cooks.component.css'
+  styleUrls: ['./politica-cooks.component.css']
 })
 export class PoliticaCooksComponent {
 

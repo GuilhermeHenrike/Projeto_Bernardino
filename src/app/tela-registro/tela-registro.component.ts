@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   imports: [],
   standalone: true,
   templateUrl: './tela-registro.component.html',
-  styleUrl: './tela-registro.component.css'
+  styleUrls: ['./tela-registro.component.css']
 })
 export class TelaRegistroComponent {
 

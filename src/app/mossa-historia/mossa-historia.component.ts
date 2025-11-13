@@ -4,9 +4,10 @@ import { RouterModule } from "@angular/router";
 
 @Component({
   selector: 'app-mossa-historia',
+  standalone: true,
   imports: [HeaderAlternativoComponent, RouterModule],
   templateUrl: './mossa-historia.component.html',
-  styleUrl: './mossa-historia.component.css'
+  styleUrls: ['./mossa-historia.component.css']
 })
 export class MossaHistoriaComponent {
 

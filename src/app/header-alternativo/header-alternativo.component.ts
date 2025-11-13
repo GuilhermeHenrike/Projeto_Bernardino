@@ -6,7 +6,7 @@ import { RouterLink } from "@angular/router";
   imports: [RouterLink],
   standalone: true,
   templateUrl: './header-alternativo.component.html',
-  styleUrl: './header-alternativo.component.css'
+  styleUrls: ['./header-alternativo.component.css']
 })
 export class HeaderAlternativoComponent {
 

@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   imports: [],
   standalone: true,
   templateUrl: './perguntas-frequentes.component.html',
-  styleUrl: './perguntas-frequentes.component.css'
+  styleUrls: ['./perguntas-frequentes.component.css']
 })
 export class PerguntasFrequentesComponent {
 

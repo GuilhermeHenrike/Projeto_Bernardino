@@ -4,9 +4,10 @@ import { HeaderAlternativoComponent } from '../header-alternativo/header-alterna
 
 @Component({
   selector: 'app-resultado',
+  standalone: true,
   imports: [HeaderAlternativoComponent],
   templateUrl: './resultado.component.html',
-  styleUrl: './resultado.component.css'
+  styleUrls: ['./resultado.component.css']
 })
 export class ResultadoComponent {
   origem = '';

@@ -6,9 +6,10 @@ import { PoliticaCooksComponent } from './politica-cooks/politica-cooks.componen
 
 @Component({
   selector: 'app-root',
+  standalone: true,
   imports: [RouterOutlet, RodapeComponent, PoliticaCooksComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
   title = 'projeto_bernardino';
