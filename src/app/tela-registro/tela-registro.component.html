@@ -1,0 +1,43 @@
+<div class="card-registro">
+  <img src="logo.png" alt="Logo" class="logo">
+
+  <h1 class="titulo">Registro</h1>
+
+  <form class="form-registro">
+    <div class="campo-form">
+      <input type="text" placeholder="Nome completo" required>
+    </div>
+
+    <div class="campo-form">
+      <input type="email" placeholder="E-mail" required>
+    </div>
+
+    <div class="campo-form">
+      <input type="password" placeholder="Senha" required>
+    </div>
+
+    <div class="campo-form">
+      <input type="password" placeholder="Confirmar senha" required>
+    </div>
+
+    <div class="campo-form">
+      <input type="date" placeholder="Data de nascimento">
+    </div>
+
+    <div class="campo-form">
+      <select>
+        <option value="">Selecione país</option>
+        <option value="brasil">Brasil</option>
+        <option value="portugal">Portugal</option>
+        <option value="eua">Estados Unidos</option>
+        <option value="outro">Outro</option>
+      </select>
+    </div>
+
+    <button class="btn-submit" type="submit">Registrar</button>
+  </form>
+
+  <p class="link-login">
+    Já tem uma conta? <a routerLink="/login">Faça login</a>
+  </p>
+</div>

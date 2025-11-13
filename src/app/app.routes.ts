@@ -12,6 +12,7 @@ import { PoliticaDePrivacidadeComponent } from './politica-de-privacidade/politi
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ResultadoComponent } from './resultado/resultado.component';
+import { TelaRegistroComponent } from './tela-registro/tela-registro.component';
 
 export const routes: Routes = [
     { path: "opcoes-main", component: OpcoesMainComponent}, 
@@ -21,14 +22,12 @@ export const routes: Routes = [
     { path: "historia", component: MossaHistoriaComponent},
     {path: "cooks", component: PoliticaCooksComponent},
     {path: "pprivacidade", component: PoliticaDePrivacidadeComponent},
-
     {path:'', redirectTo: "login",pathMatch: 'full'},
     {path:"login", component: LoginComponent},
     {path: "dashboard", component: DashboardComponent},
-
     {path: "home", component: HomeComponent},
-    { path: 'resultado', component: ResultadoComponent }
-
+    { path: 'resultado', component: ResultadoComponent },
+    { path: "registro", component: TelaRegistroComponent}
 
 
 
