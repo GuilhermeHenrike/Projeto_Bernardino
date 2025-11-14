@@ -1,0 +1,34 @@
+[33m0ceca0e[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mdev1[m[33m, [m[1;31morigin/dev1[m[33m)[m adicionei logica
+[33m93740ea[m removi a tela de login
+[33m849ab03[m adicionei tela de login
+[33m9bbcd6f[m rota da tela de registro, ainda sem botão
+[33mca17aad[m[33m ([m[1;31morigin/logica[m[33m, [m[1;32mlogica[m[33m)[m mais cidades adcionada, css corrigido e css adcioano a resultados
+[33m802f973[m logica adicionada
+[33m2175ab6[m[33m ([m[1;31morigin/login[m[33m, [m[1;32mlogin[m[33m)[m tela de login funcional ativada
+[33mdee9cd9[m adicionei a tela de registro
+[33m6313224[m[33m ([m[1;31morigin/registro[m[33m)[m base da tela de registro
+[33m3142882[m Adicionei FAC e arrumei css das telas de opcoes
+[33m6373b19[m[33m ([m[1;31morigin/tela-atendimento[m[33m, [m[1;32mtela-atendimento[m[33m)[m tela de informaçõs
+[33ma2689e7[m[33m ([m[1;31morigin/tela-ajuda[m[33m, [m[1;32mtela-ajuda[m[33m)[m correção e remoção de páginas
+[33m5099f1d[m testeee
+[33mc386714[m Salvando alterações em app.routes.ts
+[33m87a2314[m[33m ([m[1;31morigin/p-privacidade[m[33m, [m[1;31morigin/dev2[m[33m, [m[1;32mp-privacidade[m[33m)[m novas coisas corrigidas
+[33m2da905f[m tela de politica de privacidade adicionada e caminho criado
+[33m2a5f57b[m[33m ([m[1;31morigin/p-coockies[m[33m)[m politica de cookies
+[33mf001755[m[33m ([m[1;31morigin/anuncio[m[33m)[m anuncio feito
+[33m29c5367[m correções de conflitos
+[33m997886b[m[33m ([m[1;32mny-parte[m[33m)[m headers, rodapé, histótia, carrossel
+[33m5282b49[m Arrumei erros nas rotas, dependendo das proximas mudanças, arrumar de novo
+[33mda98fa1[m Adicionei a branch opcoes
+[33ma810ae3[m[33m ([m[1;31morigin/pe-carrossel[m[33m)[m cabçalho alternatuvi de páginas adicionado
+[33m61c14fa[m[33m ([m[1;31morigin/opcoes[m[33m)[m conclusãov2
+[33mbe19b76[m conclusão
+[33m87d766c[m adicionar o resto do conteudo
+[33mc33d9cb[m carrossel e rodapé adicionado
+[33m60a0081[m teste
+[33m6af53e1[m[33m ([m[1;31morigin/teste[m[33m, [m[1;31morigin/cabecalho[m[33m, [m[1;32mteste[m[33m)[m cabecalho
+[33m3d66fb2[m falta adicionar as telas
+[33me6df9e0[m colocar interatividade ainda
+[33m04543df[m arrumar o tamano de cada coisa e adicionar opção de clicar nas caixas de dentro
+[33m381c51e[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m Exclui o conteudo HTML padrão do Angular
+[33m4879822[m initial commit

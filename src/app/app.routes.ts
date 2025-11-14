@@ -12,6 +12,9 @@ import { PoliticaDePrivacidadeComponent } from './politica-de-privacidade/politi
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ResultadoComponent } from './resultado/resultado.component';
+import { ContatosComponent } from './contatos/contatos.component';
+import { PerguntasFrequentesComponent } from './perguntas-frequentes/perguntas-frequentes.component';
+import { InformacaoComponent } from './informacao/informacao.component';
 
 export const routes: Routes = [
     { path: "opcoes-main", component: OpcoesMainComponent}, 
@@ -27,7 +30,12 @@ export const routes: Routes = [
     {path: "dashboard", component: DashboardComponent},
 
     {path: "home", component: HomeComponent},
-    { path: 'resultado', component: ResultadoComponent }
+    { path: 'resultado', component: ResultadoComponent },
+
+    {path: "contatos", component: ContatosComponent},
+    {path: "pf", component: PerguntasFrequentesComponent},
+    {path: "ic", component: InformacaoComponent}
+   
 
 
 
