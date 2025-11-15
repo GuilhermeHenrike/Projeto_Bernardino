@@ -15,6 +15,7 @@ import { ResultadoComponent } from './resultado/resultado.component';
 import { ContatosComponent } from './contatos/contatos.component';
 import { PerguntasFrequentesComponent } from './perguntas-frequentes/perguntas-frequentes.component';
 import { InformacaoComponent } from './informacao/informacao.component';
+import { TelaRegistroComponent } from './tela-registro/tela-registro.component';
 
 
 export const routes: Routes = [
@@ -27,10 +28,11 @@ export const routes: Routes = [
     {path: "pprivacidade", component: PoliticaDePrivacidadeComponent},
     {path:'', redirectTo: "login",pathMatch: 'full'},
     {path:"login", component: LoginComponent},
+    {path:"registro", component: TelaRegistroComponent},
     {path: "dashboard", component: DashboardComponent},
     {path: "home", component: HomeComponent},
     { path: 'resultado', component: ResultadoComponent },
-
+    { path: "registro", component: TelaRegistroComponent},
     {path: "contatos", component: ContatosComponent},
     {path: "pf", component: PerguntasFrequentesComponent},
     {path: "ic", component: InformacaoComponent}

@@ -31,7 +31,9 @@ export class LoginComponent {
   rounter=inject(Router);
 
   validateLogin(email:string,senha:string):boolean{
-    return email===this.storedUser.email && senha===this.storedUser.senha;
+    const suStr = localStorage.getItem('storedUser');
+    const su = suStr ? JSON.parse(suStr) : this.storedUser;
+    return email === su.email && senha === su.senha;
   }
   login(){
     if(this.validateLogin(this.user.email,this.user.senha)){
@@ -40,6 +42,10 @@ export class LoginComponent {
     }else{
       alert('E-mail ou senha incorreta')
     }
+  }
+
+  goToRegistro(){
+    this.rounter.navigate(['/registro']);
   }
 
     
