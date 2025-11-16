@@ -16,6 +16,7 @@ import { ContatosComponent } from './contatos/contatos.component';
 import { PerguntasFrequentesComponent } from './perguntas-frequentes/perguntas-frequentes.component';
 import { InformacaoComponent } from './informacao/informacao.component';
 import { TelaRegistroComponent } from './tela-registro/tela-registro.component';
+import { MviajensComponent } from './mviajens/mviajens.component';
 
 
 export const routes: Routes = [
@@ -32,12 +33,8 @@ export const routes: Routes = [
     {path: "dashboard", component: DashboardComponent},
     {path: "home", component: HomeComponent},
     { path: 'resultado', component: ResultadoComponent },
-    { path: "registro", component: TelaRegistroComponent},
+    {path: "mviajens", component: MviajensComponent},
     {path: "contatos", component: ContatosComponent},
     {path: "pf", component: PerguntasFrequentesComponent},
     {path: "ic", component: InformacaoComponent}
-   
-
-
-
 ];

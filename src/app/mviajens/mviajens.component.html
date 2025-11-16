@@ -1,0 +1,52 @@
+<div class="container-viagens">
+  <h1>Minhas Viagens</h1>
+  
+  <div *ngIf="travels.length === 0" class="sem-viagens">
+    <p>Você ainda não tem viagens registradas.</p>
+  </div>
+
+  <div *ngIf="travels.length > 0" class="lista-viagens">
+    <div *ngFor="let travel of travels" class="card-viagem">
+      <div class="header-viagem">
+        <h2>{{ travel.origem }} → {{ travel.destino }}</h2>
+        <button class="btn-deletar" (click)="deleteTravel(travel.id)">Deletar</button>
+      </div>
+      
+      <div class="detalhes-viagem">
+        <div class="detalhe">
+          <span class="label">Data de Ida:</span>
+          <span class="valor">{{ travel.dataIda }}</span>
+        </div>
+        
+        <div class="detalhe">
+          <span class="label">Data de Volta:</span>
+          <span class="valor">{{ travel.dataVolta }}</span>
+        </div>
+        
+        <div class="detalhe">
+          <span class="label">Pessoas:</span>
+          <span class="valor">{{ travel.pessoas }}</span>
+        </div>
+        
+        <div class="detalhe">
+          <span class="label">Distância:</span>
+          <span class="valor">{{ travel.distancia }} km</span>
+        </div>
+        
+        <div class="detalhe">
+          <span class="label">Tempo de Voo:</span>
+          <span class="valor">{{ travel.tempo }}</span>
+        </div>
+        
+        <div class="detalhe preco">
+          <span class="label">Preço:</span>
+          <span class="valor">{{ travel.preco }}</span>
+        </div>
+      </div>
+      
+      <div class="data-criacao">
+        Registrado em: {{ travel.dataCriacao | date:'dd/MM/yyyy HH:mm' }}
+      </div>
+    </div>
+  </div>
+</div>

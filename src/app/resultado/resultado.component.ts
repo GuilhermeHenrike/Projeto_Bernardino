@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { HeaderAlternativoComponent } from '../header-alternativo/header-alternativo.component';
+import { TravelService } from '../services/travel.service';
 
 @Component({
   selector: 'app-resultado',
@@ -18,7 +19,7 @@ export class ResultadoComponent {
   preco = '';
   tempo = '';
 
-  constructor(private route: ActivatedRoute) {}
+  constructor(private route: ActivatedRoute, private travelService: TravelService) {}
 
   ngOnInit() {
     this.route.queryParams.subscribe((params) => {
@@ -30,6 +31,19 @@ export class ResultadoComponent {
       this.distancia = params['distancia'];
       this.preco = params['preco'];
       this.tempo = params['tempo'];
+
+      if (this.origem && this.destino) {
+        this.travelService.saveTravelData({
+          origem: this.origem,
+          destino: this.destino,
+          dataIda: this.dataIda,
+          dataVolta: this.dataVolta,
+          pessoas: this.pessoas,
+          distancia: this.distancia,
+          preco: this.preco,
+          tempo: this.tempo
+        });
+      }
     });
   }
 }
