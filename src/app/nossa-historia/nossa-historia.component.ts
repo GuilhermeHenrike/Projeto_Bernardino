@@ -3,11 +3,11 @@ import { HeaderAlternativoComponent } from "../header-alternativo/header-alterna
 import { RouterModule } from "@angular/router";
 
 @Component({
-  selector: 'app-mossa-historia',
+  selector: 'app-nossa-historia',
   imports: [HeaderAlternativoComponent, RouterModule],
-  templateUrl: './mossa-historia.component.html',
-  styleUrl: './mossa-historia.component.css'
+  templateUrl: './nossa-historia.component.html',
+  styleUrl: './nossa-historia.component.css'
 })
-export class MossaHistoriaComponent {
+export class NossaHistoriaComponent {
 
 }

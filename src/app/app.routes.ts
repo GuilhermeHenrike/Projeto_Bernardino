@@ -6,7 +6,7 @@ import { OpcoesMainComponent } from './opcoes-main/opcoes-main.component';
 import { AppComponent } from './app.component';
 import { CarrosselComponent } from './carrossel/carrossel.component';
 import { HomeComponent } from './home/home.component';
-import { MossaHistoriaComponent } from './mossa-historia/mossa-historia.component';
+import { NossaHistoriaComponent } from './nossa-historia/nossa-historia.component';
 import { PoliticaCooksComponent } from './politica-cooks/politica-cooks.component';
 import { PoliticaDePrivacidadeComponent } from './politica-de-privacidade/politica-de-privacidade.component';
 import { LoginComponent } from './login/login.component';
@@ -24,7 +24,7 @@ export const routes: Routes = [
     { path: "altcanc", component: AltcancComponent},
     { path: "bagagem", component: BagagemComponent},
     { path: "informacoes", component: InformacoesComponent},
-    { path: "historia", component: MossaHistoriaComponent},
+    { path: "historia", component: NossaHistoriaComponent},
     {path: "cooks", component: PoliticaCooksComponent},
     {path: "pprivacidade", component: PoliticaDePrivacidadeComponent},
     {path:'', redirectTo: "login",pathMatch: 'full'},

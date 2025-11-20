@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MossaHistoriaComponent } from './mossa-historia.component';
+import { NossaHistoriaComponent } from './nossa-historia.component';
 
-describe('MossaHistoriaComponent', () => {
-  let component: MossaHistoriaComponent;
-  let fixture: ComponentFixture<MossaHistoriaComponent>;
+describe('ossaHistoriaComponent', () => {
+  let component: NossaHistoriaComponent;
+  let fixture: ComponentFixture<NossaHistoriaComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [MossaHistoriaComponent]
+      imports: [NossaHistoriaComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(MossaHistoriaComponent);
+    fixture = TestBed.createComponent(NossaHistoriaComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
