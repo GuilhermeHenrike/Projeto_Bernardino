@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { HeaderAlternativoComponent } from '../header-alternativo/header-alternativo.component';
-import { TravelService } from '../services/travel.service';
+import { ViagemService } from '../services/viagem.service';
 
 @Component({
   selector: 'app-resultado',
@@ -10,6 +10,7 @@ import { TravelService } from '../services/travel.service';
   styleUrl: './resultado.component.css'
 })
 export class ResultadoComponent {
+
   origem = '';
   destino = '';
   dataIda = '';
@@ -19,7 +20,10 @@ export class ResultadoComponent {
   preco = '';
   tempo = '';
 
-  constructor(private route: ActivatedRoute, private travelService: TravelService) {}
+  constructor(
+    private route: ActivatedRoute,
+    private viagemService: ViagemService
+  ) {}
 
   ngOnInit() {
     this.route.queryParams.subscribe((params) => {
@@ -33,7 +37,7 @@ export class ResultadoComponent {
       this.tempo = params['tempo'];
 
       if (this.origem && this.destino) {
-        this.travelService.saveTravelData({
+        this.viagemService.salvarViagem({
           origem: this.origem,
           destino: this.destino,
           dataIda: this.dataIda,
