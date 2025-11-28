@@ -9,7 +9,6 @@ import { NossaHistoriaComponent } from './nossa-historia/nossa-historia.componen
 import { PoliticaCooksComponent } from './politica-cooks/politica-cooks.component';
 import { PoliticaDePrivacidadeComponent } from './politica-de-privacidade/politica-de-privacidade.component';
 import { LoginComponent } from './login/login.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
 import { ResultadoComponent } from './resultado/resultado.component';
 import { ContatosComponent } from './contatos/contatos.component';
 import { PerguntasFrequentesComponent } from './perguntas-frequentes/perguntas-frequentes.component';
@@ -26,10 +25,9 @@ export const routes: Routes = [
     { path: "historia", component: NossaHistoriaComponent},
     { path: "cooks", component: PoliticaCooksComponent},
     { path: "pprivacidade", component: PoliticaDePrivacidadeComponent},
-    { path:'', redirectTo: "login",pathMatch: 'full'},
+    { path:'', redirectTo: "login", pathMatch: 'full'},
     { path:"login", component: LoginComponent},
     { path:"registro", component: TelaRegistroComponent},
-    { path: "dashboard", component: DashboardComponent},
     { path: "home", component: HomeComponent},
     { path: 'resultado', component: ResultadoComponent },
     { path: "mviagem", component: MviagemComponent},
