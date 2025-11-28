@@ -4,7 +4,6 @@ import { BagagemComponent } from './bagagem/bagagem.component';
 import { InformacoesComponent } from './informacoes/informacoes.component';
 import { OpcoesMainComponent } from './opcoes-main/opcoes-main.component';
 import { AppComponent } from './app.component';
-import { CarrosselComponent } from './carrossel/carrossel.component';
 import { HomeComponent } from './home/home.component';
 import { NossaHistoriaComponent } from './nossa-historia/nossa-historia.component';
 import { PoliticaCooksComponent } from './politica-cooks/politica-cooks.component';
@@ -25,16 +24,16 @@ export const routes: Routes = [
     { path: "bagagem", component: BagagemComponent},
     { path: "informacoes", component: InformacoesComponent},
     { path: "historia", component: NossaHistoriaComponent},
-    {path: "cooks", component: PoliticaCooksComponent},
-    {path: "pprivacidade", component: PoliticaDePrivacidadeComponent},
-    {path:'', redirectTo: "login",pathMatch: 'full'},
-    {path:"login", component: LoginComponent},
-    {path:"registro", component: TelaRegistroComponent},
-    {path: "dashboard", component: DashboardComponent},
-    {path: "home", component: HomeComponent},
+    { path: "cooks", component: PoliticaCooksComponent},
+    { path: "pprivacidade", component: PoliticaDePrivacidadeComponent},
+    { path:'', redirectTo: "login",pathMatch: 'full'},
+    { path:"login", component: LoginComponent},
+    { path:"registro", component: TelaRegistroComponent},
+    { path: "dashboard", component: DashboardComponent},
+    { path: "home", component: HomeComponent},
     { path: 'resultado', component: ResultadoComponent },
-    {path: "mviagem", component: MviagemComponent},
-    {path: "contatos", component: ContatosComponent},
-    {path: "pf", component: PerguntasFrequentesComponent},
-    {path: "ic", component: InformacaoComponent}
+    { path: "mviagem", component: MviagemComponent},
+    { path: "contatos", component: ContatosComponent},
+    { path: "pf", component: PerguntasFrequentesComponent},
+    { path: "ic", component: InformacaoComponent}
 ];
